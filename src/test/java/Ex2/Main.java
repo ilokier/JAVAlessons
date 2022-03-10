@@ -13,17 +13,16 @@ public class Main {
 
         int maxNumber = 0;
         int sum = 0;
-        int counter = numbers.length;
+       // int counter = numbers.length;
 
         for (int i = 0; i < size; i++) {
-            System.out.println("Insert number " + counter);
+            System.out.println("Insert number " + (i+1));
             numbers[i] = scanner.nextInt();
             sum += numbers[i];
             maxNumber = numbers[i];
             if (numbers[i] > maxNumber) {
                 maxNumber = numbers[1];
             }
-            counter--;
         }
         double average = sum/size;
         System.out.println("The average of your numbers was: " + average);
